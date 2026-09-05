@@ -85,7 +85,7 @@ airsight-ai/
 ### 3. Run the Dashboard
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Rohite-Mahalawat/airsight-ai.git
+   git clone https://github.com/Rohite-Mahlawat/airsight-ai.git
    cd airsight-ai
    ```
 2. Install Python dependencies:
