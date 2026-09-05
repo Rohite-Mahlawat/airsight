@@ -1,17 +1,17 @@
 # 🛡️ AirSight-AI: Real-Time Wireless Airspace Radar & Device De-Randomization
 
-> **A 100% passive, listen-only RF airspace radar designed for sensitive environments (examination centers, secure corporate facilities, and data centers). Detects and tracks 2.4 GHz Wi-Fi transmitters, solves MAC address randomization using hardware/protocol fingerprinting, and flags close-proximity threats without emitting disruptive RF signals.**
+> **A 100% passive, listen-only RF airspace radar designed for sensitive environments (examination centers, secure corporate facilities, and data centers). Detects and tracks 2.4 GHz Wi-Fi transmitters and passive signals.**
 
 ---
 
 ## 📌 Project Overview
 
-Traditional electronic security systems rely on either active network associations (which miss disconnected or searching mobile devices) or illegal radio frequency jammers. Active jamming creates disruptive noise, blocks emergency calls, and violates national telecommunications regulations (such as India's WPC and DoT mandates).
+Traditional electronic security systems rely on either active network associations (which miss disconnected or searching mobile devices) or illegal radio frequency jammers. Active jamming creates dangerous side effects and legal issues.
 
 **AirSight-AI** solves this challenge through a **100% passive, listen-only sensor architecture**:
 1. **Zero RF Emissions:** Operates in strict promiscuous listen-only mode. It sends no handshakes, transmits no packets, and complies fully with wireless radio regulations.
 2. **Promiscuous 802.11 Frame Interception:** Continuously hops across 2.4 GHz channels 1–13, passively capturing 802.11 management frames (Probe Requests, Beacons) and data frames.
-3. **AI Hardware De-Randomization:** Solves modern mobile OS MAC randomization (iOS & Android) by correlating Information Element (IE) hardware capabilities, sequence number continuity, and spatial RF propagation.
+3. **AI Hardware De-Randomization:** Solves modern mobile OS MAC randomization (iOS & Android) by correlating Information Element (IE) hardware capabilities, sequence number continuity, and spatial RF features.
 4. **Log-Distance Path Loss Modeling:** Accurately estimates device distance and flags unauthorized devices entering a configurable immediate proximity threat zone (<3m).
 5. **Real-Time Interactive Radar:** Displays airspace occupancy on an interactive dark-themed dashboard with persistent zoom/pan and manufacturer identification.
 
@@ -55,7 +55,7 @@ To defeat ephemeral MAC rotation without deanonymizing personal user data:
 ## 📁 Repository Structure
 
 ```text
-airsight-ai/
+airsight/
 ├── airsight/
 │   └── airsight.ino       # ESP32 C++ promiscuous sniffer firmware
 ├── app.py                 # Streamlit real-time radar dashboard
@@ -85,8 +85,8 @@ airsight-ai/
 ### 3. Run the Dashboard
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Rohite-Mahlawat/airsight-ai.git
-   cd airsight-ai
+   git clone https://github.com/Rohite-Mahlawat/airsight.git
+   cd airsight
    ```
 2. Install Python dependencies:
    ```bash
