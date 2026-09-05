@@ -99,7 +99,3 @@ airsight-ai/
 4. In the browser interface (`http://localhost:8501`), select your ESP32 COM port and toggle **Start Live Radar**.
 
 ---
-
-## 📜 License & Acknowledgements
-
-Developed as a Transdisciplinary Project (TDP) in Computer Science & Engineering (IoT, Cyber Security & AI) at Vivekananda Global University (VGU), Jaipur.
